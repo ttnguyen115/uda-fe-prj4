@@ -26,7 +26,7 @@ app.get("/test", function (req, res) {
 
 app.post("/api", async (req, res) => {
   try {
-    const urlString = `https://api.meaningcloud.com/sentiment-2.1?key=${process.env.API_KEY}&lang=en&txt=${req.body.txt}`
+    const urlString = `https://api.meaningcloud.com/sentiment-2.1?key=${process.env.API_KEY}&lang=en&url=${req.body.url}`
     const response = await axios.post(urlString);
     res.send(response.data);
   } catch (err) {

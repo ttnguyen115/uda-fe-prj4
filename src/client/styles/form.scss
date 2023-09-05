@@ -4,6 +4,17 @@ form {
     padding: 40px;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
 input {
     padding: 5px 20px;
     width: 100%;
@@ -11,6 +22,23 @@ input {
     margin: 10px 0;
 }
 
-#button {
+#submit {
     font-weight: bold;
+    background: aqua;
+    outline: none;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #36adbb;
+}
+
+#results tr th {
+    background: #ccc;
 }

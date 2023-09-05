@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Udacity Project 4 - TrungNT102</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -18,15 +21,33 @@
 
         <main>
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" placeholder="Name">
-                    <input id="button" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="url" type="text" name="input" value="" placeholder="Add URL here">
+                    <label for="url" id="error-display"></label>
+                    <button id="submit" type="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">Submit</button>
                 </form>
             </section>
 
             <section>
                 <strong>Form Results:</strong>
-                <div id="results"></div>
+                <div id="results">
+                    <table>
+                        <tr>
+                            <th>Agreement</th>
+                            <th>Subjectivity</th>
+                            <th>Confidence</th>
+                            <th>Irony</th>
+                            <th>Score Tag</th>
+                        </tr>
+                        <tr>
+                            <th id="agreement"></th>
+                            <th id="subjectivity"></th>
+                            <th id="confidence"></th>
+                            <th id="irony"></th>
+                            <th id="score_tag"></th>
+                        </tr>
+                    </table>
+                </div>
             </section>
         </main>
 
